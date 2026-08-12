@@ -40,7 +40,7 @@ const projects = [
 function App() {
   const [menu, setMenu] = useState(false)
   const [copyToast, setCopyToast] = useState('')
-  
+
   // Contact form state
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' })
   const [formStatus, setFormStatus] = useState({ sent: false, loading: false, error: '' })
@@ -120,16 +120,16 @@ function App() {
             <svg width="40" height="40" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" className="brand-svg">
               {/* Glowing Squircle Backdrop */}
               <rect x="1.5" y="1.5" width="39" height="39" rx="11" fill="rgba(0, 201, 255, 0.06)" stroke="url(#brandGrad)" strokeWidth="1.5" className="emblem-box" />
-              
+
               {/* Geometric 'K' */}
               <path d="M12 11V31M12 21L21 11M14.5 18.5L22 31" stroke="#ffffff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-              
+
               {/* Geometric 'R' */}
               <path d="M23 19H27.5C29.4 19 31 17.4 31 15C31 12.6 29.4 11 27.5 11H23V31M23 19L31 31" stroke="#00c9ff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-              
+
               {/* Accent Cyan Gem Dot */}
               <circle cx="32" cy="9" r="2.5" fill="#00f0ff" className="emblem-dot" />
-              
+
               <defs>
                 <linearGradient id="brandGrad" x1="0" y1="0" x2="42" y2="42" gradientUnits="userSpaceOnUse">
                   <stop stopColor="#00c9ff" />
@@ -188,7 +188,7 @@ function App() {
               <button onClick={() => handleCopy('karishmarathore1302@gmail.com', 'Email')} aria-label="Copy Email" title="Copy Email" className="icon-btn">
                 <Mail />
               </button>
-              <button onClick={() => handleCopy('+919201720969', 'Phone')} aria-label="Copy Phone" title="Copy Phone" className="icon-btn">
+              <button onClick={() => handleCopy('+919201721969', 'Phone')} aria-label="Copy Phone" title="Copy Phone" className="icon-btn">
                 <Phone />
               </button>
             </div>
@@ -258,7 +258,7 @@ function App() {
                   <span className="project-label">{p.label}</span>
                   <h3>{p.title}</h3>
                   <p>{p.description}</p>
-                  
+
                   <ul>
                     {p.impact.map(x => <li key={x}>{x}</li>)}
                   </ul>
@@ -322,7 +322,7 @@ function App() {
             <div className="contact-info-card">
               <h3>Get in Touch</h3>
               <p>I'm open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-              
+
               <div className="contact-list">
                 <div className="contact-item" onClick={() => handleCopy('karishmarathore1302@gmail.com', 'Email')}>
                   <Mail className="item-icon" />
@@ -333,11 +333,11 @@ function App() {
                   <Copy size={15} className="copy-icon" />
                 </div>
 
-                <div className="contact-item" onClick={() => handleCopy('+919201720969', 'Phone number')}>
+                <div className="contact-item" onClick={() => handleCopy('+919201721969', 'Phone number')}>
                   <Phone className="item-icon" />
                   <div>
                     <span className="item-label">Phone</span>
-                    <strong>+91 92017 20969</strong>
+                    <strong>+91 92017 21969</strong>
                   </div>
                   <Copy size={15} className="copy-icon" />
                 </div>
@@ -367,7 +367,7 @@ function App() {
             {/* Quick Contact Form */}
             <form className="contact-form" onSubmit={handleFormSubmit}>
               <h3>Send a Message</h3>
-              
+
               {formStatus.error && (
                 <div className="form-alert error">
                   <span>{formStatus.error}</span>
