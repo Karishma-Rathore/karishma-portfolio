@@ -188,7 +188,7 @@ function App() {
               <button onClick={() => handleCopy('karishmarathore1302@gmail.com', 'Email')} aria-label="Copy Email" title="Copy Email" className="icon-btn">
                 <Mail />
               </button>
-              <button onClick={() => handleCopy('+919201721969', 'Phone')} aria-label="Copy Phone" title="Copy Phone" className="icon-btn">
+              <button onClick={() => handleCopy('+919201720969', 'Phone')} aria-label="Copy Phone" title="Copy Phone" className="icon-btn">
                 <Phone />
               </button>
             </div>
@@ -333,11 +333,11 @@ function App() {
                   <Copy size={15} className="copy-icon" />
                 </div>
 
-                <div className="contact-item" onClick={() => handleCopy('+919201721969', 'Phone number')}>
+                <div className="contact-item" onClick={() => handleCopy('+919201720969', 'Phone number')}>
                   <Phone className="item-icon" />
                   <div>
                     <span className="item-label">Phone</span>
-                    <strong>+91 92017 21969</strong>
+                    <strong>+91 92017 20969</strong>
                   </div>
                   <Copy size={15} className="copy-icon" />
                 </div>
